@@ -71,8 +71,10 @@
 button{
     padding: 15px;
     border: none;
-    background-color:orange;
-    cursor: pointer;
+    background-color: #f7b42c;
+    color: white;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #f02f39 74%);
+    
     font-weight: 500;
     @include mobile {
       padding: 10px;
