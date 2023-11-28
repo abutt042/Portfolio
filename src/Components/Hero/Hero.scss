@@ -31,7 +31,7 @@
             h1 {
                 font-size: 66px;
                 @include mobile {
-                   font-size: 35px;
+                   font-size: 30px;
                 }
             }
             .buttons {
@@ -45,7 +45,7 @@
                     cursor: pointer;
                     @include mobile {
                         margin-rigth : 10px;
-                        padding: 15px;
+                        padding: 10px;
                         margin-top : 2%;
                     }
                 }

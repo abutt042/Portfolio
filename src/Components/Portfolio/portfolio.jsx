@@ -45,7 +45,7 @@ const Portfoilio = () => {
         const { scrollYProgress } = useScroll({ target: ref,  })
         const y = useTransform(scrollYProgress, [0, 1], [-400, 400])
 
-        return (<section >
+        return (<section  >
             <div className="container">
             <div className="wrapper">
                 <div className="imagecontainer" ref={ref}>
