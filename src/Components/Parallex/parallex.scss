@@ -37,7 +37,10 @@ z-index: 3;
     height: 100%;
    background-position: bottom;
     z-index: 2;
-   
+    @include mobile {
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
 
 }
 .stars{

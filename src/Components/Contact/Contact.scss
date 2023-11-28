@@ -48,7 +48,9 @@
             margin: auto;
             z-index: -1;
             
-           
+            @include mobile {
+                display: none;
+                }
            
         }
         form{
