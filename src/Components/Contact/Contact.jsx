@@ -51,6 +51,7 @@ const Contact = (props) => {
             });
     };
     return (
+        <section>
         <motion.div ref={ref} className="contact" variants={variants} initial='initial' whileInView='animate'>
             <motion.div className="textcontainer">
                 <motion.h1 variants={variants}>Let's work together</motion.h1>
@@ -85,6 +86,7 @@ const Contact = (props) => {
                 </motion.form>
             </div>
         </motion.div>
+        </section>
     )
 };
 
