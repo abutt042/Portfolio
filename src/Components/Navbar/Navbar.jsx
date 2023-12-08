@@ -10,7 +10,7 @@ const Navbar = () => {
         <motion.span initial = {{opacity : 0, scale : 0.5}} animate = {{opacity : 1, scale : 1}} transition = {{duration:0.5}}>Abdullah Bin Tariq</motion.span>
         <div className="social">
             <a href={CV} target='_blank' download >
-        <button >Download My CV</button>
+        <button >My Resume</button>
         </a>
             <a href='https://github.com/abutt042' target='_blank'><img src='/github_64.png' alt=''/></a>
             <a href='https://www.facebook.com/abdullah.butt.73307634' target='_blank'><img src='/facebook.png' alt=''/></a>

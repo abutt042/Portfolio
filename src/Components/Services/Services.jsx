@@ -48,25 +48,27 @@ const Services = () => {
             </motion.div>
             <motion.div className="listcontainer" variants ={variants}>
                 <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem praesentium repellendus deserunt omnis, similique nobis est, beatae ea?</p>
+                    <h2>Web Applications</h2>
+                    <p>
+Having developed web applications, I bring a wealth of experience in creating innovative and functional digital solutions. My skill set includes proficiency in web development technologies such as HTML, CSS, and JavaScript, with a particular focus on utilizing frameworks like React.js to build dynamic and interactive user interfaces.  I am dedicated to delivering high-quality applications that meet user needs and business objectives.</p>
                     <button>Go</button>
                 </motion.div>
                 <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
+                    <h2>E-commerece Sites</h2>
+                    <p>
+As an experienced web developer, I specialize in designing and implementing robust e-commerce solutions tailored to meet the unique needs of businesses in the digital marketplace. With a keen understanding of user experience and a focus on creating seamless online shopping journeys, I leverage technologies such as HTML, CSS, JavaScript, and frameworks like React.js to build dynamic and visually appealing e-commerce websites. </p>
+                    <button>Go</button>
+                </motion.div>
+                {/* <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
                     <h2>Branding</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem praesentium repellendus deserunt omnis, similique nobis est, beatae ea?</p>
                     <button>Go</button>
-                </motion.div>
-                <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem praesentium repellendus deserunt omnis, similique nobis est, beatae ea?</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
+                </motion.div> */}
+                {/* <motion.div whileHover={{ backgroundColor: 'grey', color: 'black' }} className="box">
                     <h2>Branding</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem praesentium repellendus deserunt omnis, similique nobis est, beatae ea?</p>
                     <button style={{marginTop:'5%'}}>Go</button>
-                </motion.div>
+                </motion.div> */}
                 </motion.div>
 
         </motion.div>

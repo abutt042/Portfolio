@@ -30,7 +30,7 @@ const Links = (props) => {
     "Services",
     "Portfolio",
     "Contact",
-    "About"
+    
   ]
   return (
     <motion.div className="links" varients ={varients}>

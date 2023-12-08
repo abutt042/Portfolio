@@ -14,9 +14,10 @@ import Test from './test';
 const App = () => {
   return <div>
 <Cursor/>
+    
     <section id='Homepage'>
+      <Navbar/>
       <Sidebar/>
-    <Navbar/>
     <Hero/>
     </section>
    
@@ -25,7 +26,7 @@ const App = () => {
     <section id='Portfolio'><Parallex type = "portfolio"/></section>
     <Portfoilio/>
 
-    <section id='Contact'><Contact/>
+    <section id="Contact"><Contact/>
     </section>
 
 {/* <Test/> */}
