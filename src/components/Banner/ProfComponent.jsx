@@ -16,9 +16,7 @@ const ProfComponent = () => {
           <h1 className="green">Abdullah Bin Tariq</h1>
           <h3>Front End Developer</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+          An enthusiastic Front End Web Development developer with over 1 year of experience in enterprise software development. Proficient in utilizing React, JavaScript, CSS, and Bootstrap to create engaging and responsive web applications. A self-motivated individual with a strong passion for learning and keeping up with the latest industry trends. Possesses excellent problem-solving skills and a keen attention to detail, ensuring the delivery of high-quality and user-friendly web solutions.
           </p>
           <button>Let's talk</button>
           <Social>
@@ -46,7 +44,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            // src={mypic}
+             src={mypic}
             alt="profile"
           />
         </Profile>
@@ -59,6 +57,7 @@ export default ProfComponent;
 
 const Container = styled.div`
   display: flex;
+  overflow: hidden;
   gap: 2rem;
   padding-top: 3rem;
   width: 80%;
@@ -148,6 +147,7 @@ const Social = styled.div`
 const Profile = styled.div`
   img {
     width: 25rem;
+    
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {

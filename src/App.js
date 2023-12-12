@@ -7,9 +7,10 @@ import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 function App() {
   return (
+    <>       
+    <Header />
     <Container>
       <Banner>
-        <Header />
         <ProfComponent />
       </Banner>
       <Services />
@@ -21,6 +22,8 @@ function App() {
         <Footer />
       </LightColor>
     </Container>
+    </>
+
   );
 }
 

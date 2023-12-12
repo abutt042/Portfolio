@@ -36,7 +36,10 @@ const Container = styled.div`
     width: 80%;
     margin: 0 auto;
     padding: 1.5rem 0;
-    position: relative;
+    position: sticky;
+    
+    top: 0;
+    z-index: 1000; /* Add z-index for stacking context */
     animation: header 500ms ease-in-out;
     @media(max-width: 840px){
         width: 90%;

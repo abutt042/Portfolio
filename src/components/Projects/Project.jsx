@@ -48,7 +48,7 @@ const Container = styled.div`
     
         p{
             width: 90%;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             a{
                 margin-left: 0.4rem;
                 color: red;
