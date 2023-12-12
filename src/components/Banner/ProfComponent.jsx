@@ -5,6 +5,7 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import mypic from '../../mypic.png';
+import TypewriterComponent from "typewriter-effect";
 const ProfComponent = () => {
   return (
     <Container id="home">
@@ -13,27 +14,37 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Abdullah Bin Tariq</h1>
-          <h3>Front End Developer</h3>
+          <h1>
+          <TypewriterComponent
+                    options={{
+                      strings: [
+                        'Abdullah Bin Tariq',
+                        "Front End Web Developer",
+                        
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 5,
+                      
+                    }}
+                  />
+          
+          </h1>
           <p>
-          An enthusiastic Front End Web Development developer with over 1 year of experience in enterprise software development. Proficient in utilizing React, JavaScript, CSS, and Bootstrap to create engaging and responsive web applications. A self-motivated individual with a strong passion for learning and keeping up with the latest industry trends. Possesses excellent problem-solving skills and a keen attention to detail, ensuring the delivery of high-quality and user-friendly web solutions.
+          An enthusiastic Front End Web Development developer with over 1 year of experience in enterprise software development. Proficient in utilizing React, JavaScript, CSS, and Bootstrap to create engaging and responsive web applications.
           </p>
-          <button>Let's talk</button>
+          <a href="#footer"><button>Let's talk</button></a>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="https://www.instagram.com/ab_here_1/">
+                <a href="https://www.instagram.com/ab_here_1/" target="_blank">
                   <AiOutlineInstagram />
                 </a>
               </span>
+             
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
-                </a>
-              </span>
-              <span>
-                <a href="https://www.linkedin.com/in/abdullah-bin-tariq-1775391a7/">
+                <a href="https://www.linkedin.com/in/abdullah-bin-tariq-1775391a7/" target="_blank">
                   <FaLinkedinIn />
                 </a>
               </span>
@@ -59,6 +70,7 @@ const Container = styled.div`
   display: flex;
   overflow: hidden;
   gap: 2rem;
+  align-items: center;
   padding-top: 3rem;
   width: 80%;
   max-width: 1280px;
@@ -74,6 +86,7 @@ const Container = styled.div`
 `;
 const Texts = styled.div`
   flex: 1;
+  
   h4 {
     padding: 1rem 0;
     font-weight: 500;
@@ -91,6 +104,7 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
+    padding-top:1%;
   }
 
   button {

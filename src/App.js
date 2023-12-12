@@ -5,9 +5,20 @@ import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
+import AnimatedCursor from "./hooks/AnimatedCursor";
 function App() {
   return (
     <>       
+    <div className="cursor__dot">
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="255, 255 ,255"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      </div>
     <Header />
     <Container>
       <Banner>
