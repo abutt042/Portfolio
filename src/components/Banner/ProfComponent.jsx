@@ -19,7 +19,7 @@ const ProfComponent = () => {
                     options={{
                       strings: [
                         'Abdullah Bin Tariq',
-                        "Front End Web Developer",
+                        "Front End Developer",
                         
                       ],
                       autoStart: true,
@@ -95,16 +95,23 @@ const Texts = styled.div`
     font-size: 2rem;
     font-family: "Secular One", sans-serif;
     letter-spacing: 2px;
+    @media (max-width: 690px) {
+      font-size: 1.3rem;
+    }
   }
   h3 {
     font-weight: 500;
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
     text-transform: capitalize;
+    @media (max-width: 690px) {
+      font-size: 0.7rem;
+    }
   }
   p {
     font-weight: 300;
     padding-top:1%;
+    
   }
 
   button {
