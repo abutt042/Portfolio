@@ -9,16 +9,19 @@ import eops from '../../images/e-Operations.png';
 let data = [
     {
         img : mepco,
-        disc : "MEPCO smart is a web application developed in React with backend API's in.Net and SQL Server. This web app offers smart Meter consumers features: realtime monitoring of load, consumption and payment status, energy advisor etc.. and customerservices, duplicatebill and online payment"
-    },
+        disc : "MEPCO smart is a web application developed in React with backend API's in.Net and SQL Server. This web app offers smart Meter consumers features: realtime monitoring of load, consumption and payment status, energy advisor etc.. and customerservices, duplicatebill and online payment",
+        url: 'http://117.20.28.178:8040/'
+      },
     {
         img : citizenmoniter,
-        disc : "An admin portal to display hierarchical dashboard stats of theft case along with role based operations on the submitted electricity theft case developed during the anti-theft campaign launched by ministry of energy (MoE) power division of Pakistan."
-    },
+        disc : "An admin portal to display hierarchical dashboard stats of theft case along with role based operations on the submitted electricity theft case developed during the anti-theft campaign launched by ministry of energy (MoE) power division of Pakistan.",
+        url: 'http://117.20.28.178:8044/'
+      },
     {
         img : eops,
-        disc : "e-Ops is web portal is developed in React.js and backend in DotNet with SQL Server. This portal is used by field operations staff in all 10 Discos customer support centers to process consumers’ requests: new connection applications, change of attributes, meter reading correction, complaints, opt for smart meter etc"
-    },
+        disc : "e-Ops is web portal is developed in React.js and backend in DotNet with SQL Server. This portal is used by field operations staff in all 10 Discos customer support centers to process consumers’ requests: new connection applications, change of attributes, meter reading correction, complaints, opt for smart meter etc",
+        url: 'http://117.20.28.178:8037/'
+      },
     {
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
         disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"

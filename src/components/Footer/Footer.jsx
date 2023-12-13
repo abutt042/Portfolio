@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
@@ -7,14 +7,45 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import toast, { Toaster } from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+  const [error, seterror] = useState(null)
+const [loading, setLoading] = useState(false);
+const form = useRef();
+
   const scrollUp = () => {
     window.scroll({
       top: 0,
       behavior: "smooth",
     });
   };
+  const notify = (success) => {
+    toast.dismiss(); // Dismiss any existing toasts
+    toast[success ? 'success' : 'error'](
+        success ? 'Thanks for contacting me.' : 'Error sending message.'
+    );
+};
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    console.log("Api hit");
+    console.log(form.current)
+
+    emailjs.sendForm('service_ui1dajo', 'template_5110eqa', form.current, 'zD_S1ABC00BUrJ0OT')
+        .then((result) => {
+            setLoading(false);
+            seterror(false);
+            form.current.reset()
+            notify(true);
+        })
+        .catch((error) => {
+            setLoading(false);
+            seterror(true);
+           
+        });
+};
   return (
     <Container id="footer">
       <Profile>
@@ -90,31 +121,35 @@ const Footer = () => {
           </ArrowUp>
         </Fade>
       </Profile>
-      <Form>
-        <Slide direction="right">
-          <form>
+      <Form  >
+        
+          <form ref={form} onSubmit={sendEmail}>
             <div className="name">
               <span>
                 <CgProfile />
               </span>
-              <input type="text" placeholder="Fullname..." />
+              <input type="text" placeholder="Fullname..." name="name"/>
             </div>
             <div className="email">
               <span>
                 <MdAlternateEmail />
               </span>
-              <input type="email" placeholder="Email..." />
+              <input type="email" placeholder="Email..." name="email"/>
             </div>
             <div className="message">
               <span className="messageIcon">
                 <FiMail />
               </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+              <textarea cols="30" rows="10" placeholder="Message..." name="message"></textarea>
             </div>
-            <button>Submit</button>
+            <button type="submit" disabled={loading}>
+                            {loading ? 'Loading...' : 'Submit'}
+                        </button>
+                        <Toaster position="top-right" duration={7000} />
           </form>
-        </Slide>
+       
       </Form>
+      
     </Container>
   );
 };
