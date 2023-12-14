@@ -32,7 +32,7 @@ const ProfComponent = () => {
           
           </h1>
           <p>
-          An enthusiastic Front End Web Development developer with over 1 year of experience in enterprise software development. Proficient in utilizing React, JavaScript, CSS, and Bootstrap to create engaging and responsive web applications.
+          An enthusiastic Front End Web developer with over 1 year of experience in enterprise software development. Proficient in utilizing React, JavaScript, CSS, and Bootstrap to create engaging and responsive web applications.
           </p>
           <a href="#footer"><button>Let's talk</button></a>
           <a href={cv} target="_blank" download>< button style={{margin:'0 3%'}}>My Resume</button></a>
