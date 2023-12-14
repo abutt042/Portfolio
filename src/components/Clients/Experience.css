@@ -116,4 +116,8 @@ padding: 0px 0px 20px 30px;
     .box p{
         font-size: 13px;
     }
+    h4{
+        margin-top: 2%;
+        flex-direction: column;
+    }
 }

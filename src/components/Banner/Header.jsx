@@ -106,7 +106,7 @@ const Nav = styled.div`
         inset: 0;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         gap: 2rem;
         font-weight: 700;
         height: ${props => props.bar ? "100vh" : 0};
