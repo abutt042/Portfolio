@@ -169,27 +169,27 @@ function CursorCore({
     useEventListener('mouseout', onMouseLeaveViewport)
   
     // Cursors Hover/Active State
-    useEffect(() => {
-      if (isActive) {
-        cursorInnerRef.current.style.transform = `translate(-50%, -50%) scale(${innerScale})`
-        cursorOuterRef.current.style.transform = `translate(-50%, -50%) scale(${outerScale})`
-      } else {
-        cursorInnerRef.current.style.transform = 'translate(-50%, -50%) scale(1)'
-        cursorOuterRef.current.style.transform = 'translate(-50%, -50%) scale(1)'
-      }
-    }, [innerScale, outerScale, isActive])
+    // useEffect(() => {
+    //   if (isActive) {
+    //     cursorInnerRef.current.style.transform = `translate(-50%, -50%) scale(${innerScale})`
+    //     cursorOuterRef.current.style.transform = `translate(-50%, -50%) scale(${outerScale})`
+    //   } else {
+    //     cursorInnerRef.current.style.transform = 'translate(-50%, -50%) scale(1)'
+    //     cursorOuterRef.current.style.transform = 'translate(-50%, -50%) scale(1)'
+    //   }
+    // }, [innerScale, outerScale, isActive])
   
     // Cursors Click States
-    useEffect(() => {
-      if (isActiveClickable) {
-        cursorInnerRef.current.style.transform = `translate(-50%, -50%) scale(${
-          innerScale * 1.2
-        })`
-        cursorOuterRef.current.style.transform = `translate(-50%, -50%) scale(${
-          outerScale * 1.4
-        })`
-      }
-    }, [innerScale, outerScale, isActiveClickable])
+    // useEffect(() => {
+    //   if (isActiveClickable) {
+    //     cursorInnerRef.current.style.transform = `translate(-50%, -50%) scale(${
+    //       innerScale * 1.2
+    //     })`
+    //     cursorOuterRef.current.style.transform = `translate(-50%, -50%) scale(${
+    //       outerScale * 1.4
+    //     })`
+    //   }
+    // }, [innerScale, outerScale, isActiveClickable])
   
     // Cursor Visibility State
     useEffect(() => {

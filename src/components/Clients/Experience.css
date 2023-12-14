@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* .container{
+    
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 35px 10%;
+} */
+.container{
+    width: 100%;
+    padding: 35px 10%;
+
+}
+main.row{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-column-gap: 20px;
+}
+.col header.title{
+font-family: 'Montserrat', sans-serif;
+color: #01be96;
+padding: 0px 0px 20px 30px;
+
+}
+.col .contents{
+    padding: 0 30px;
+    border-left: 2px solid #bababa;
+}
+.col .contents .box{
+    position:relative;
+    padding: 20px;
+    /* border: 1px solid #eaeaea; */
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+   
+}
+.col .contents .box:hover{
+    box-shadow:0px 10px 10px #01be9570;
+    border: 1px solid transparent;
+}
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color:  #01be96;
+    border:2px solid white;
+
+}
+
+.box h4{
+    position:relative;
+    color: #01be96;
+
+}
+.box h3{
+   font-size: 19px;
+   padding: 10px 0px 6px;
+   font-family:'Montserrat', sans-serif;
+   color:  #01be96;
+    
+}
+.box p {
+    line-height: 1.2;
+    color: white;
+    font-size: 16px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    position: relative;
+    padding-left: 30px;
+    font-family:'Montserrat', sans-serif;
+
+  }
+  button {
+    padding: 0.5rem 1rem;
+ border-radius: 25px;
+    
+    background-color: #4b4b5e;
+    margin-top: 6%;
+
+   border: none;
+    color: #fff;
+    font-weight: 500;
+
+    
+  }
+.box p::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 5px; /* Adjust the position of the circle */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #01be96;
+    border: 1px solid white;
+  }
+@media(max-width: 786px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+}

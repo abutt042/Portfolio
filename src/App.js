@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 import AnimatedCursor from "./hooks/AnimatedCursor";
+import Experience from "./components/Clients/Experience";
 function App() {
   return (
     <>       
@@ -28,7 +29,8 @@ function App() {
       <LightColor>
         <Projects />
       </LightColor>
-      <Clients />
+      
+      <Experience/>
       <LightColor>
         <Footer />
       </LightColor>
