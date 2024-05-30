@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import mepco from'../../images/Mepco.PNG';
 import citizenmoniter from '../../images/citizen.PNG';
 import eops from '../../images/e-Operations.png';
+import empowercare from '../../images/empowercare.png'
 let data = [
     {
         img : mepco,
@@ -22,10 +23,11 @@ let data = [
         disc : "e-Ops is web portal is developed in React.js and backend in DotNet with SQL Server. This portal is used by field operations staff in all 10 Discos customer support centers to process consumers’ requests: new connection applications, change of attributes, meter reading correction, complaints, opt for smart meter etc",
         url: 'http://117.20.28.178:8037/'
       },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    },
+      {
+        img : empowercare,
+disc :'EmpowerCare is a CRM web application developed in React, delivering top-tier staffing solutions. It fosters an environment that empowers healthcare institutions and professionals, aligning with our mission and contributing to our purpose. At EmpowerCare, we create a workspace where everyone feels valued and supported, enabling hospitals to run smoothly, healthcare professionals to thrive in their careers, and communities to enjoy better health.'        ,
+url: 'https://empowercare.us/'
+      },
    
 ];
 
