@@ -33,7 +33,7 @@ const form = useRef();
     console.log("Api hit");
     console.log(form.current)
 
-    emailjs.sendForm('service_ui1dajo', 'template_5110eqa', form.current, 'zD_S1ABC00BUrJ0OT')
+    emailjs.sendForm('service_7q1wkod', 'template_5110eqa', form.current, 'zD_S1ABC00BUrJ0OT')
         .then((result) => {
             setLoading(false);
             seterror(false);

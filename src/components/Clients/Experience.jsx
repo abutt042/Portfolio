@@ -13,9 +13,22 @@ const Experience = () => {
 
 
                     <div className="contents">
+                        
                         <div className="box">
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop:'2%' }}>
+                                <h4>May 2024 - continue </h4>
+                                <h4>Unitech Digital Studio </h4>
+
+
+                            </div>
+
+                            <h3> Front End Web Developer</h3>
+                            <p> Creating responsive and visually appealing user interfaces using HTML, CSS, and JavaScript. This includes implementing web designs, ensuring cross-browser compatibility, and optimizing for performance.</p>
+                            <p> Working closely with user experience (UX) and user interface (UI) designers to translate design mockups and wireframes into functional and interactive web pages.</p>
+                            <p> Writing clean, maintainable, and scalable code while optimizing the performance of web applications. This includes conducting code reviews, writing unit tests, and using tools for debugging and performance monitoring.</p>
+                            <p>Using version control systems like Git to manage and track changes in the codebase. This involves collaborating with other developers and maintaining a clear project history.</p>
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop:'2%' }}>
-                                <h4>2022-Present  </h4>
+                                <h4>Nov 2022- May 2024 </h4>
                                 <h4>Power Information Technology Company </h4>
 
 
@@ -27,6 +40,7 @@ const Experience = () => {
                             <p> Designing and developing responsive user interfaces that are compatible across multiple screen resolutions and browsers.</p>
                             <p> Writing clean, maintainable and modular code following best software development practices</p>
                         </div>
+
                         {/* <div className="box">
 
                             <h4>2016-2022</h4>
